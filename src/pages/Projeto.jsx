@@ -40,53 +40,53 @@ function Projeto() {
       body: JSON.stringify(project),
 
     }).then((resp) => {
-      resp.json() 
+      resp.json()
       console.log(resp)
     })
-        .then((data) => {
-    setProject(data)
+      .then((data) => {
+        setProject(data)
 
-    setShowProjectForm(!showProjectForm)
-  }).catch((err) => console.log(err))
-}
+        setShowProjectForm(!showProjectForm)
+      }).catch((err) => console.log(err))
+  }
 
-return (
-  <>
-    {project.name ? (
-      <div className={Styles.project_datails}>
-        <Container customClass='column'>
-          <div className={Styles.details_container}>
-            <h1>Projeto: {project.name}</h1>
-            <button onClick={toggleProjectForm} className={Styles.btn}>
-              {!showProjectForm ? 'Editar Projeto' : 'Fechar'}
-            </button>
-          </div>
-          <div>
-            {!showProjectForm ? (
-              <div className={Styles.project_info}>
-                <p>
-                  <span>Categoria: </span> {project.categoria.name}
-                </p>
-                <p>
-                  <span>Orçamento: </span> R${project.budget}
-                </p>
-                <p>
-                  <span>Total Utilizado: </span>{project.cost}
-                </p>
-              </div>
-            ) : (
-              <div className={Styles.project_info}>
-                <FormProjeto handleSubmit={editPost} btntext='Concluir Edição' projectData={project} />
-              </div>
-            )}
-          </div>
-        </Container>
-      </div>
-    ) : (
-      <Loading />
-    )}
-  </>
-)
+  return (
+    <>
+      {project.name ? (
+        <div className={Styles.project_datails}>
+          <Container customClass='column'>
+            <div className={Styles.details_container}>
+              <h1>Projeto: {project.name}</h1>
+              <button onClick={toggleProjectForm} className={Styles.btn}>
+                {!showProjectForm ? 'Editar Projeto' : 'Fechar'}
+              </button>
+            </div>
+            <div>
+              {!showProjectForm ? (
+                <div className={Styles.project_info}>
+                  <p>
+                    <span>Categoria: </span> {project.categoria.name}
+                  </p>
+                  <p>
+                    <span>Orçamento: </span> R${project.budget}
+                  </p>
+                  <p>
+                    <span>Total Utilizado: </span>{project.cost}
+                  </p>
+                </div>
+              ) : (
+                <div className={Styles.project_info}>
+                  <FormProjeto handleSubmit={editPost} btntext='Concluir Edição' projectData={project} />
+                </div>
+              )}
+            </div>
+          </Container>
+        </div>
+      ) : (
+        <Loading />
+      )}
+    </>
+  )
 }
 
 export default Projeto
