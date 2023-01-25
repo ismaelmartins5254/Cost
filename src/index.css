@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+
+html, body, #root{
+    background-color: #efefef;
+}

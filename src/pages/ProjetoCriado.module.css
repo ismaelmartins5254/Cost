@@ -1,0 +1,10 @@
+.PjCriado{
+    padding: 2em;
+    width: 100em;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}

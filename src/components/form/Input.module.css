@@ -1,0 +1,18 @@
+.inputsForm_container{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.inputsForm_container input{
+    height: 3em;
+    border: none;
+    text-align: center;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+.inputsForm_container label{
+    margin-bottom: .6em;
+    font-weight: bold;
+}
