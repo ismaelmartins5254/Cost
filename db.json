@@ -1,15 +1,26 @@
 {
   "Projects": [
     {
-      "name": "teste",
-      "budget": "50000",
+      "name": "Projeto atualizado",
+      "budget": "2000",
+      "categoria": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "Site de uma loja online",
+      "budget": "5000",
       "categoria": {
         "id": "2",
         "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
-      "id": 2
+      "id": 3
     }
   ],
   "categorias": [
