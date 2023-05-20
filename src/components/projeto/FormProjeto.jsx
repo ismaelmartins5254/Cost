@@ -49,14 +49,15 @@ function FormProjeto({ handleSubmit, projectData, btntext }) {
                     name='name'
                     placeholder='digite o nome do projeto'
                     handleOnChange={handleChange}
-                    value={project.name? project.name : ''} />
+                    value={project.name ? project.name : ''} />
             </div>
             <div>
                 <Input type='number'
                     text='Orçamento do Projeto'
                     name='budget'
-                    placeholder='digite o orçamento disponivel R$' handleOnChange={handleChange}
-                    value={project.budget? project.budget : ''}
+                    placeholder='digite o orçamento disponivel R$'
+                    handleOnChange={handleChange}
+                    value={project.budget ? project.budget : ''}
                 />
             </div>
             <div>

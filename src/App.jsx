@@ -15,9 +15,9 @@ import Footer from './components/layout/Footer'
 function App() {
   return (
     <Router>
-      
-        <NavBar/>
-      
+
+      <NavBar />
+
       <Switch>
         <Container customClass='min_heigth'>
           <Route exact path='/'>
@@ -27,10 +27,10 @@ function App() {
             <ProjetosCriados />
           </Route>
           <Route path='/Projetos'>
-            <Projetos/>
+            <Projetos />
           </Route>
           <Route path='/project/:id'>
-            <Projeto/>
+            <Projeto />
           </Route>
           <Route path='/Empresa'>
             <Empresa />
@@ -42,7 +42,7 @@ function App() {
       </Switch>
 
       <Footer />
-      
+
     </Router>
   )
 }
